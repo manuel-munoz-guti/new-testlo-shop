@@ -1,4 +1,4 @@
-import { TopMenu } from "@/components";
+import { Footer, TopMenu } from "@/components";
 import { Sidebar } from "@/components/ui/sidebar/Sidebar";
 
 export default function ShopLayout({ children }: { children: React.ReactNode; }) {
@@ -9,6 +9,7 @@ export default function ShopLayout({ children }: { children: React.ReactNode; })
         <div className="px-0 sm:px-10">
         { children }
         </div>
+      <Footer />
     </main>
   );
 }
